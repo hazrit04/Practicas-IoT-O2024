@@ -22,7 +22,7 @@ Serial.begin(9600);
   WiFi.disconnect();
   delay(3000);
   Serial.println("Iniciando");
-  WiFi.begin("AGACENTRO","0192837465");
+  WiFi.begin("INFINITUM54EE","26MDHnsaag");
   while ((!(WiFi.status() == WL_CONNECTED))){
     Serial.print("......");
     delay(300);
