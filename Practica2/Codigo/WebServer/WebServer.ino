@@ -17,12 +17,12 @@ uint8_t temprature_sens_read();
 
 void setup()
 {
-Serial.begin(9600);
+Serial.begin(115200);
 
   WiFi.disconnect();
   delay(3000);
   Serial.println("Iniciando");
-  WiFi.begin("INFINITUM54EE","26MDHnsaag");
+  WiFi.begin("IoT","1t3s0IoT23");
   while ((!(WiFi.status() == WL_CONNECTED))){
     Serial.print("......");
     delay(300);

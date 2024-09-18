@@ -2,8 +2,8 @@
 #include <WiFi.h>
 #include <WiFiClient.h>
 
-const char* ssid = "AGACENTRO";
-const char* password = "0192837465";
+const char* ssid = "IoT";
+const char* password = "1t3s0IoT23";
 
 WiFiServer server(80);
 

@@ -2,14 +2,17 @@
 #include <WiFi.h>
 #include <WiFiClient.h>
 
-const char* ssid = "INFINITUM54EE";
-const char* password = "26MDHnsaag";
+const char* ssid = "IoT";
+const char* password = "1t3s0IoT23";
 
 WiFiServer server(80);
 
 #define LED 15
 
 String estado = "";
+
+uint8_t temprature_sens_read();
+
 
 void setup()
 {
@@ -71,6 +74,14 @@ void loop()
       client.println("<a href = 'on2'><button>Enciende LED</button></a>");
       client.println("<a href = 'off2'><button>Apaga LED</button></a>");
       client.println("<br><br>");
+      client.println("<span style=""color:#ffcc66;font-size:14px"">");
+      client.println("La temperatura interna del ESP32 es de:");
+      client.println("</span>");
+      client.println("<span style=""color:#000000;font-size:20px"">");
+      client.println(((temprature_sens_read() - 32 ) / 1.8));
+      client.println("</span>");
+      client.println("<span style=""color:#ffcc66;font-size:14px"">");
+      client.println("grados");
       client.println(estado);
     client.println("</font>");
     client.println("</center>");
