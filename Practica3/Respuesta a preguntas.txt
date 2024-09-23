@@ -1,0 +1,3 @@
+1. Al tocar el sensor por unos momentos la humedad que marca el sensor va aumentando hasta que dejo de tocar el sensor.
+
+2. Al acercarme al sensor y aventar un poco de aliento hace que aumente considerablemente la humedad del sensor, pero la temperatura permanece relativamente estable.
