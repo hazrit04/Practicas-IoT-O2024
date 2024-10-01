@@ -37,7 +37,9 @@ void loop() {
   float h = dht.readHumidity();
 
   // Mostrar los valores de temperatura y humedad en el monitor serial
+  Serial.println("Temperatura:");
   Serial.println(t);
+  Serial.println("Humedad:");
   Serial.println(h);
 
   // Verificar si las lecturas son válidas
@@ -60,7 +62,7 @@ void loop() {
   display.cp437(true);              // Habilitar el conjunto de caracteres CP437 para el símbolo de grados
   display.write(167);               // Mostrar el símbolo de grados
   display.setTextSize(2);
-  display.print("C");¡
+  display.print("C");
 
   // Mostrar la humedad en el display OLED
   display.setTextSize(1);
