@@ -29,8 +29,8 @@ uint32_t startMillis;
 const uint16_t timerDuration = 30000;
 
 // wifi credentials
-const char *ssid = "AGA Centro";
-const char *password = "0192837465";
+const char *ssid = "IoT";
+const char *password = "1t3s0IoT23";
 WiFiClient  client;
 
 // OpenWeather
@@ -126,7 +126,7 @@ void sendDataToThingSpeak(){
 
     // set a twittwer
     //String tweet = "Proyecto IoT, mensaje AUTOMATICO - La temperatura actual en mi ciudad es: " + apiTemperature + "*C";
-    //ThingSpeak.setTwitterTweet("lupitatg", tweet);
+    //ThingSpeak.setTwitterTweet("tirzah", tweet);
     
      // write to the ThingSpeak Channel
     int code = ThingSpeak.writeFields(channelNumber, writeAPIKey);

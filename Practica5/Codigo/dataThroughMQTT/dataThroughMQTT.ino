@@ -9,8 +9,8 @@
  *  
  * Define Constants 
  ****************************************/ 
-#define WIFISSID "AGA Centro" //WIFI SSID aqui 
-#define PASSWORD "0192837465" // WIFI pwd 
+#define WIFISSID "IoT" //WIFI SSID aqui 
+#define PASSWORD "1t3s0IoT23" // WIFI pwd 
 #define TOKEN "BBUS-95vs5pkyvDie8YgoVk0gHntpMkQMsk" // Ubidots TOKEN name el mismo que usamos en clase 
 #define MQTT_CLIENT_NAME "FE235DVE45" //ID del cliente, 8 a 12 chars alfanumericos (ASCII), debe ser random y unico dif a otros devices 
 #define VARIABLE_LABEL_temp "temperatura" // Variable Temperatura 
